@@ -1,0 +1,20 @@
+# System / IDE
+.vscode/
+.idea/
+.DS_Store
+
+# PHP
+vendor/
+composer.lock
+
+# Node
+node_modules/
+dist/
+
+# Uploads / temp
+uploads/
+tmp/
+*.log
+
+# Secrets
+.env
