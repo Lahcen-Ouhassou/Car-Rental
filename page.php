@@ -16,7 +16,7 @@ include('includes/config.php');
 <!--Bootstrap -->
 <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
 <!--Custome Style -->
-<link rel="stylesheet" href="assets/sty.css" type="text/css">
+<link rel="stylesheet" href="assets/stylee.css" type="text/css">
 <!--OWL Carousel slider-->
 <link rel="stylesheet" href="assets/css/owl.carousel.css" type="text/css">
 <link rel="stylesheet" href="assets/css/owl.transitions.css" type="text/css">
@@ -46,7 +46,7 @@ include('includes/config.php');
               padding: 60px 0;
               position: relative;
               text-align: justify;
-              z-index: 1; 
+              z-index: 0; 
               overflow: hidden; 
             }
             .page-header h1 {
@@ -79,7 +79,7 @@ if($query->rowCount() > 0)
 foreach($results as $result)
 { ?>
 <section class="page-header ">
-  <div class="container">
+  <div class="container" >
     <div class="page-header_wrap">
       <div class="page-heading">
         <h1><?php   echo htmlentities($result->PageName); ?></h1>
@@ -95,7 +95,7 @@ foreach($results as $result)
 </section>
 <section class="about_us section-padding">
   <div class="container">
-    <div class="section-header text-center">
+    <div class="section-header text-center" data-aos="fade-right"  data-aos-duration="2500">
 
 
       <h2><?php   echo htmlentities($result->PageName); ?></h2>
@@ -148,6 +148,8 @@ foreach($results as $result)
 <!-- loading --> 
 <script src="assets/js/loadingscreen.js"></script> 
 <!-- / -->
+
+
 
 </body>
 </html>

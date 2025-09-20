@@ -35,6 +35,9 @@ $msg="Page data Updated Successfully";
 	
 	<title> Admin Manage Pages - Agency CarRental </title>
 
+
+	<link rel="stylesheet" href="css/dataTables.bootstrap.min.css">
+
 	<!-- Font awesome -->
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<!-- Sandstone Bootstrap CSS -->
@@ -49,6 +52,11 @@ $msg="Page data Updated Successfully";
 	<link rel="stylesheet" href="css/awesome-bootstrap-checkbox.css">
 	<!-- Admin Stye -->
 	<link rel="stylesheet" href="css/new2.css">
+
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/favicon-icon/LOGOrent.jpg">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/favicon-icon/LOGOrent.jpg">
+<link rel="apple-touch-icon-precomposed" href="img/favicon-icon/LOGOrent.jpg">
+<link rel="shortcut icon" href="img/favicon-icon/LOGOrent.jpg">
 	<script type="text/JavaScript">
 <!--
 function MM_findObj(n, d) { //v4.01
@@ -138,13 +146,14 @@ function MM_jumpMenu(targ,selObj,restore){ //v3.0
     height: 26px;
     width: 131px;
 " required>
-                  <option value="" selected="selected" class="form-control">Select Page</option>
-                  <option value="manage-pages.php?type=terms">terms and condition</option>
-                  <option value="manage-pages.php?type=privacy">privacy and policy</option>
-                  <option value="manage-pages.php?type=aboutus">aboutus</option> 
-                  <option value="manage-pages.php?type=Services">Services</option>
-				  <option value="manage-pages.php?type=FAQ">FAQ</option>
-                </select>
+    <option value="" <?php if(empty($_GET['type'])) echo 'selected'; ?>>Select Page</option>
+    <option value="manage-pages.php?type=terms" <?php if($_GET['type']=="terms") echo 'selected'; ?>>terms and condition</option>
+    <option value="manage-pages.php?type=privacy" <?php if($_GET['type']=="privacy") echo 'selected'; ?>>privacy and policy</option>
+    <option value="manage-pages.php?type=aboutus" <?php if($_GET['type']=="aboutus") echo 'selected'; ?>>aboutus</option> 
+    <option value="manage-pages.php?type=Services" <?php if($_GET['type']=="Services") echo 'selected'; ?>>Services</option>
+    <option value="manage-pages.php?type=FAQ" <?php if($_GET['type']=="FAQ") echo 'selected'; ?>>FAQ</option>
+</select>
+
 												</div>
 											</div>
 											<div class="hr-dashed"></div>
@@ -245,6 +254,9 @@ echo htmlentities($result->detail);
 	<script src="js/fileinput.js"></script>
 	<script src="js/chartData.js"></script>
 	<script src="js/main.js"></script>
+
+	<script src="js/dataTables.bootstrap.min.js"></script>
+	<script src="js/jquery.dataTables.min.js"></script>
 
 </body>
 

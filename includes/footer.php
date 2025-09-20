@@ -14,14 +14,14 @@ if($query -> rowCount() > 0)
 {
 
 ?>
-"<script> 
+<script> 
 swal({
 title: "Already Subscribed.",
 text: "                     ",
-icon: "success",
+icon: "error",
 button: false,
 });
-</script>";
+</script>
 <?php
 
 }
@@ -34,7 +34,7 @@ $lastInsertId = $dbh->lastInsertId();
 if($lastInsertId)
 {
 ?>
-"<script>
+<script>
 
   
 swal({
@@ -42,8 +42,8 @@ title: "Subscribed Successfully.",
 text: "                     ",
 icon: "success",
 button: false,
-});
-</script>";
+})
+</script>
 
 <?php
 
@@ -53,7 +53,7 @@ else
 
 
 ?>
-"<script>
+&nbsp;<script>
 
   
 swal({
@@ -62,7 +62,7 @@ text: "Please try again",
 icon: "error",
 button: false,
 });
-</script>";
+</script>
 
 <?php
 
@@ -101,7 +101,7 @@ button: false,
           <h5 style="
     margin-bottom: 7px;
 ">Localisation</h5>
-          <iframe class="localisation" style="margin-top: 7px;border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3103.4660253986126!2d-9.601118062697296!3d30.428078685147657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdb3b76a74f6397f%3A0x4355e56a2dfa6a12!2sDrarga!5e0!3m2!1sen!2sma!4v1683752278606!5m2!1sen!2sma" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe class="localisation" style="margin-top: 7px;border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6883.946164739419!2d-9.478358052744873!3d30.380122237952072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdb3c8bd3f08b8f3%3A0x46e3ca6394ef27c5!2sDrarga!5e0!3m2!1sen!2sma!4v1719614455368!5m2!1sen!2sma"  style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
 
@@ -118,7 +118,7 @@ button: false,
         </div>
       </div>
 
-      <div class="col-md-3 col-sm-6 mb-4"> <!-- Added mb-4 class for bottom margin -->
+      <div class="col-md-3 col-sm-6 mb-4"> 
         <div class="newsletter-form">
           <h5 style="
     display: flex;

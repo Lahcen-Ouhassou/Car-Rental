@@ -16,13 +16,16 @@ error_reporting(0);
 <!--Bootstrap -->
 <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
 <!--Custome Style -->
-<link rel="stylesheet" href="assets/sty.css" type="text/css">
+<link rel="stylesheet" href="assets/stylee.css" type="text/css">
 <!--OWL Carousel slider-->
 <link rel="stylesheet" href="assets/css/owl.carousel.css" type="text/css">
 <link rel="stylesheet" href="assets/css/owl.transitions.css" type="text/css">
-<!--slick-slider -->
-<!-- <link href="assets/css/slick.css" rel="stylesheet">
-<!- bootstrap-slider -->
+
+
+
+
+
+<!-- bootstrap-slider -->
 <link href="assets/css/bootstrap-slider.min.css" rel="stylesheet">
 <!--FontAwesome Font Style -->
 <link href="assets/css/font-awesome.min.css" rel="stylesheet">
@@ -47,7 +50,7 @@ error_reporting(0);
               padding: 60px 0;
               position: relative;
               text-align: justify;
-              z-index: 1; 
+              z-index: 0; 
               overflow: hidden; 
             }
             .page-header h1 {
@@ -73,7 +76,7 @@ error_reporting(0);
 
 <!--Page Header-->
 <section class="page-header listing_page">
-  <div class="container">
+  <div class="container" >
     <div class="page-header_wrap">
       <div class="page-heading">
         <h1>Showroom</h1>
@@ -308,6 +311,7 @@ error_reporting(0);
 <!-- loading --> 
 <script src="assets/js/loadingscreen.js"></script> 
 <!-- / -->
+
 
 </body>
 </html>

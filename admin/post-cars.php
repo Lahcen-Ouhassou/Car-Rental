@@ -111,6 +111,12 @@ if(strlen($_SESSION['alogin']) == 0) {
 	<link rel="stylesheet" href="css/awesome-bootstrap-checkbox.css">
 	<!-- Admin Stye -->
 	<link rel="stylesheet" href="css/new2.css">
+
+
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/favicon-icon/LOGOrent.jpg">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/favicon-icon/LOGOrent.jpg">
+<link rel="apple-touch-icon-precomposed" href="img/favicon-icon/LOGOrent.jpg">
+<link rel="shortcut icon" href="img/favicon-icon/LOGOrent.jpg">
 <style>
 		.errorWrap {
     padding: 10px;
@@ -248,6 +254,7 @@ foreach($results as $result)
 			<option value="Red"> Red </option>
             <option value="Green">Green</option>
             <option value="Brown">Brown</option>
+            <option value="Orange">Orange</option>
         </select>
     </div>
 </div>

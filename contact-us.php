@@ -55,8 +55,10 @@ if(isset($_POST['send'])) {
     <meta name="description" content="">
     <title>Contact Us - CarRental</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="assets/sty.css" type="text/css">
+    <link rel="stylesheet" href="assets/stylee.css" type="text/css">
     <link rel="stylesheet" href="assets/css/font-awesome.min.css" type="text/css">
+
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/images/favicon-icon/LOGOrent.jpg">
     <link rel="shortcut icon" href="assets/images/favicon-icon/LOGOrent.jpg">
@@ -87,7 +89,7 @@ if(isset($_POST['send'])) {
             padding: 60px 0;
             position: relative;
             text-align: justify;
-            z-index: 1;
+            z-index: 0;
             overflow: hidden;
         }
         .page-header h1 {
@@ -143,8 +145,8 @@ button: false,
 <?php include('includes/header.php');?>
 
 <section class="page-header">
-    <div class="container">
-        <div class="page-header_wrap">
+    <div class="container" >
+        <div class="page-header_wrap" >
             <div class="page-heading">
                 <h1>Contact Us</h1>
             </div>

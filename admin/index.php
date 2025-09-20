@@ -41,7 +41,11 @@ echo "<script type='text/javascript'> document.location = 'dashboard.php'; </scr
 	<link rel="stylesheet" href="css/new2.css">
 	<link rel="stylesheet" href="css/bootstrap-select.css">
 	<link rel="stylesheet" href="css/fileinput.min.css">
-	<link rel="stylesheet" href="css/awesome-bootstrap-checkbox.css"	
+	
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/favicon-icon/LOGOrent.jpg">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/favicon-icon/LOGOrent.jpg">
+<link rel="apple-touch-icon-precomposed" href="img/favicon-icon/LOGOrent.jpg">
+<link rel="shortcut icon" href="img/favicon-icon/LOGOrent.jpg">
 
 </head>
 

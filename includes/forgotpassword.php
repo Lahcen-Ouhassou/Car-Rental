@@ -46,7 +46,7 @@ if (isset($_POST['reset'])) {
         $mail->Body    = 'Click the following link to reset your password: <a href="http://localhost/carrental/includes/passwordreset.php?token=' . $reset_token . '">Reset Password</a>';
 
         if ($mail->send()) {
-            echo "<script>swal({ title: 'Success', text: 'Password Reset link has been sent to your Email.', icon: 'success', button: false, });</script>";
+            echo "<script>swal({ title: 'Check Your Email', text: 'Password Reset link has been sent to your Email.', icon: 'success', button: false, });</script>";
             
         } else {
             echo "<script>swal({ title: 'Error!', text: 'Failed to send reset email. Please try again.', icon: 'error', button: false, });</script>";

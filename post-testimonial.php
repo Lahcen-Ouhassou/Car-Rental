@@ -40,7 +40,7 @@ if(isset($_POST['submit'])) {
 <!--Bootstrap -->
 <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
 <!--Custome Style -->
-<link rel="stylesheet" href="assets/sty.css" type="text/css">
+<link rel="stylesheet" href="assets/stylee.css" type="text/css">
 <!--OWL Carousel slider-->
 <link rel="stylesheet" href="assets/css/owl.carousel.css" type="text/css">
 <link rel="stylesheet" href="assets/css/owl.transitions.css" type="text/css">
@@ -125,7 +125,7 @@ if(isset($_POST['submit'])) {
 </section>
 <!-- /Page Header--> 
 
-<?php 
+<?php
 $useremail = $_SESSION['login'];
 $sql = "SELECT * FROM users WHERE EmailU = :useremail";
 $query = $dbh->prepare($sql);
@@ -136,15 +136,21 @@ $results = $query->fetchAll(PDO::FETCH_OBJ);
 if ($query->rowCount() > 0) {
     foreach ($results as $result) {
         $profilePicture = $result->photo;
+        $photoSource = $result->photo_source;
+
+        if ($photoSource == 'gmail') {
+            $profilePictureUrl = $profilePicture;
+        } else {
+            $profilePictureUrl = "uploads/" . $profilePicture;
+        }
         ?>
-<section class="user_profile inner_pages">
-  <div class="container">
-    <div class="user_profile_info gray-bg padding_4x4_40">
-      <div class="upload_user_logo text-center">
-        <img src="uploads/<?php echo htmlspecialchars($profilePicture); ?>" alt="User Photo" class="center-block img-responsive"style="
-    border-radius: 36px;
-">
-      </div>
+         <section class="user_profile inner_pages">
+            <div class="container">
+                <div class="user_profile_info gray-bg padding_4x4_40">
+                  <div class="upload_user_logo text-center">
+                      <!-- Display the profile picture dynamically -->
+                      <img src="<?php echo htmlspecialchars($profilePictureUrl); ?>" alt="User Photo" class="center-block img-responsive" style="border-radius: 36px;">
+                  </div> 
 
       <div class="dealer_info">
         <h5><?php echo htmlentities($result->FullName);?></h5>

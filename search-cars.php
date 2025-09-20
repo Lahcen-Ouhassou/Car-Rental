@@ -16,7 +16,7 @@ error_reporting(0);
 <!--Bootstrap -->
 <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
 <!--Custome Style -->
-<link rel="stylesheet" href="assets/sty.css" type="text/css">
+<link rel="stylesheet" href="assets/stylee.css" type="text/css">
 
 <link href="assets/css/slick.css" rel="stylesheet">
 <!--bootstrap-slider -->

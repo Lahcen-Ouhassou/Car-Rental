@@ -79,7 +79,7 @@ if (isset($_GET['token'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Added viewport meta tag -->
     <title>Password Reset - CarRental</title>
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="../assets/sty.css" type="text/css">
+    <link rel="stylesheet" href="../assets/stylee.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/images/favicon-icon/LOGOrent.jpg">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/images/favicon-icon/LOGOrent.jpg">

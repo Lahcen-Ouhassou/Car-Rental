@@ -17,8 +17,12 @@ error_reporting(0);
 
 
 <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
-<link rel="stylesheet" href="assets/style.css" type="text/css">
+<link rel="stylesheet" href="assets/stylee.css" type="text/css">
 <link rel="stylesheet" href="assets/css/owl.carousel.css" type="text/css">
+
+<!-- AOS animate -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
 
 <!-- scroll cars -->
@@ -60,7 +64,7 @@ error_reporting(0);
     <div class="div_zindex">
       <div class="row">
         <div class="col-md-5 col-md-push-7">
-          <div class="banner_content">
+          <div class="banner_content" >
             <h1>Drive Into Comfort " Your Perfect Journey Awaits with us "</h1>
        
         </div>
@@ -148,7 +152,13 @@ error_reporting(0);
             color:#c4aea5;
         }
         .recent-car-list {
-  height: 479px;
+  height: 500px;
+}
+.tesusers {
+  text-align: left !important;
+  width: 210px !important;
+  color: white;
+  font-size: 14px;
 }
 </style>
 
@@ -156,7 +166,7 @@ error_reporting(0);
   <!-- السيارات الجديدة المدرجة حديثًا -->
   <div class="tab-content">
     <div role="tabpanel" class="tab-pane active" id="resentnewcar">
-      <div class="car-slider">
+      <div class="car-slider" >
       <?php
 $sql = "SELECT cars.carsTitle, brands.BrandName, cars.PricePerDay, cars.FuelType, cars.ModelYear, cars.consumption, cars.Btv, cars.id, cars.SeatingCapacity, cars.colorC, cars.Cimage1 
         FROM cars 
@@ -231,7 +241,7 @@ if ($query->rowCount() > 0) {
 
 <div class="section sf">
     <div class="content">
-        <div class="box">
+        <div class="box" >
         <p class="pf">
         <h3 class="tit">Ultimate Comfort <br><span class="tit1">Car Rentals</span></h3>  
      <p class="p">Discover the best car rental experience in our premier service. We offer comfort quality and exceptional customer satisfaction. Enjoy smooth and safe driving with the latest models equipped with modern features , Know that you have chosen the best !</p></p>
@@ -243,11 +253,11 @@ if ($query->rowCount() > 0) {
 
 
 <!-- Fun Facts-->
-<h2 class="wawe">Why Are We ?</h2>
+<h2 class="wawe" >Why Are We ?</h2>
 <br>
 <div class="lineex2"></div>
 <section class="fun-facts-section">
-    <div class="container div_zindex">
+    <div class="container div_zindex" >
         <div class="row">
             <div class="col-lg-3 col-xs-6 col-sm-6">
                 <div class="cell">
@@ -355,22 +365,28 @@ foreach($results as $result)
 
 <!-- Scripts --> 
 <!-- slide cars --> 
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/interface.js"></script> 
-<script src="assets/js/bootstrap.min.js"></script> 
-<script src="assets/js/owl.carousel.min.js"></script>
+<script src="./assets/js/jquery.min.js"></script>
+<script src="./assets/js/interface.js"></script> 
+<script src="./assets/js/bootstrap.min.js"></script> 
+<script src="./assets/js/owl.carousel.min.js"></script>
 
-<script src="assets/js/slick.min.js"></script> 
+<script src="../assets/js/slick.min.js"></script> 
 
 
 <!-- icon go to top --> 
-<script src="assets/js/bootstrap-slider.min.js"></script> 
+<script src="./assets/js/bootstrap-slider.min.js"></script> 
  
 
 <!-- loading --> 
-<script src="assets/js/loadingscreen.js"></script> 
+<script src="./assets/js/loadingscreen.js"></script> 
 <!-- / -->
 
+<!-- AOS animate --> 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<!-- / -->
 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 

@@ -42,7 +42,7 @@ $msg="Profile Updated Successfully";
 <!--Bootstrap -->
 <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
 <!--Custome Style -->
-<link rel="stylesheet" href="assets/sty.css" type="text/css">
+<link rel="stylesheet" href="assets/stylee.css" type="text/css">
 <!--OWL Carousel slider-->
 <link rel="stylesheet" href="assets/css/owl.carousel.css" type="text/css">
 <link rel="stylesheet" href="assets/css/owl.transitions.css" type="text/css">
@@ -53,6 +53,8 @@ $msg="Profile Updated Successfully";
 <!--FontAwesome Font Style -->
 <link href="assets/css/font-awesome.min.css" rel="stylesheet">
 
+<!--flatpickr input date-->
+<link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"/>
 
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/images/favicon-icon/LOGOrent.jpg">
 <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/images/favicon-icon/LOGOrent.jpg">
@@ -126,7 +128,7 @@ $msg="Profile Updated Successfully";
 </section>
 
 <!-- /Page Header--> 
-<?php 
+<?php
 $useremail = $_SESSION['login'];
 $sql = "SELECT * FROM users WHERE EmailU = :useremail";
 $query = $dbh->prepare($sql);
@@ -137,15 +139,21 @@ $results = $query->fetchAll(PDO::FETCH_OBJ);
 if ($query->rowCount() > 0) {
     foreach ($results as $result) {
         $profilePicture = $result->photo;
+        $photoSource = $result->photo_source;
+
+        if ($photoSource == 'gmail') {
+            $profilePictureUrl = $profilePicture;
+        } else {
+            $profilePictureUrl = "uploads/" . $profilePicture;
+        }
         ?>
-<section class="user_profile inner_pages">
-  <div class="container">
-    <div class="user_profile_info gray-bg padding_4x4_40">
-      <div class="upload_user_logo text-center">
-        <img src="uploads/<?php echo htmlspecialchars($profilePicture); ?>" alt="User Photo" class="center-block img-responsive " style="
-    border-radius: 36px;
-">
-      </div>
+         <section class="user_profile inner_pages">
+            <div class="container">
+                <div class="user_profile_info gray-bg padding_4x4_40">
+                  <div class="upload_user_logo text-center">
+                      <!-- Display the profile picture dynamically -->
+                      <img src="<?php echo htmlspecialchars($profilePictureUrl); ?>" alt="User Photo" class="center-block img-responsive" style="border-radius: 36px;">
+                  </div>  
 
 
       <div class="dealer_info">
@@ -162,7 +170,7 @@ if ($query->rowCount() > 0) {
         <div class="profile_wrap">
           
         <div class="gray-bg field-title">
-          <h6 class="uppercase ">Genral Settings</h6>
+          <h6 class="uppercase ">GENERAL SETTINGS</h6>
             </div>
           <?php  
          if($msg){?><div class="succWrap"><strong>SUCCESS</strong>:<?php echo htmlentities($msg); ?> </div><?php }?>
@@ -191,7 +199,8 @@ if ($query->rowCount() > 0) {
             </div>
             <div class="form-group">
               <label class="control-label">Date of Birth&nbsp;</label>
-              <input class="form-control white_bg" value="<?php echo htmlentities($result->dob);?>" name="dob" id="birth-date" type="date" >
+              <input type="text"  id="datepicker" class="form-control white_bg" value="<?php echo htmlentities($result->dob);?>" name="dob"  id="birth-date"   required>
+
             </div>
             
             <div class="form-group">
@@ -261,6 +270,22 @@ if ($query->rowCount() > 0) {
 <script src="assets/js/loadingscreen.js"></script> 
 <!-- / -->
 
+
+<!-- script flatpickr --> 
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<!-- / -->
+
+<script>
+      flatpickr("#datepicker", {
+        dateFormat: "Y-m-d", // Set the date format
+        allowInput: true, // Allow manual input of dates
+        altInput: true, // Enable an alternative input field
+        altFormat: "F j, Y", // Set the format for the alternative input field
+        maxDate: "today", // Restrict dates to today and past dates
+        // Placeholder text
+        // You can add more customization options as needed
+      });
+    </script>  
 </body>
 </html>
 <?php } ?>

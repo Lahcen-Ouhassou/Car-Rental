@@ -32,7 +32,7 @@ if(isset($_POST['submit'])) {
         // Handle error if car details not found
         ?>
 &nbsp;<script>
-
+  
   
 swal({
 title: "Car details Not Found",
@@ -163,13 +163,14 @@ button: false,
 <!--Bootstrap -->
 <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
 <!-- Style -->
-<link rel="stylesheet" href="assets/sty.css" type="text/css">
+<link rel="stylesheet" href="assets/stylee.css" type="text/css">
 <!--Carousel slider Cars-->
 <link rel="stylesheet" href="assets/css/owl.carousel.css" type="text/css">
 <!--fonts family-->
 <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
 
-
+<!--flatpickr input date-->
+<link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"/>
 
 
 
@@ -533,11 +534,12 @@ $_SESSION['brndid']=$result->bid;
     <form method="post">
       <div class="form-group">
         <label for="">From Date</label>
-        <input type="date" class="form-control" name="FromDate" min="<?php echo date('Y-m-d'); ?>" required>
+        <input type="text"  id="datepicker" class="form-control" name="FromDate" placeholder="From Date"    required>
       </div>
       <div class="form-group">
         <label for="">To Date</label>
-        <input type="date" class="form-control" name="ToDate" min="<?php echo date('Y-m-d'); ?>" required>
+        <input type="text"  id="datepicker" class="form-control" name="ToDate" placeholder="To Date"    required>
+
       </div>
       <div class="form-group">
         <label for="">Message</label>
@@ -652,5 +654,20 @@ foreach($results as $result)
 <script src="assets/js/loadingscreen.js"></script> 
 <!-- / -->
 
+<!-- script flatpickr --> 
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<!-- / -->
+
+    <script>
+      flatpickr("#datepicker", {
+        dateFormat: "Y-m-d", // Set the date format
+        allowInput: true, // Allow manual input of dates
+        altInput: true, // Enable an alternative input field
+        altFormat: "F j, Y", // Set the format for the alternative input field
+        minDate: "today", // Restrict dates to today and future dates
+        // Placeholder text
+        // You can add more customization options as needed
+      });
+    </script>
 </body>
 </html>

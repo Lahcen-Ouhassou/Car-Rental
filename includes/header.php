@@ -23,11 +23,11 @@
   <div class="default-header">
     <div class="container">
       <div class="row">
-        <div class="col-sm-3 col-md-2">
+        <div class="col-sm-3 col-md-2" data-aos="fade-right"  data-aos-duration="2500">
           <div class="logo"> <a href="index.php"><img src="assets/images/LOGOcr.png" alt="image" class="logrental"></a> </div>
         </div>
         <div class="col-sm-9 col-md-10">
-          <div class="header_info">
+          <div class="header_info" data-aos="fade-right"  data-aos-duration="2500">
             <div class="header_widgets"style="padding-left: 38px;border-right: 0.5px solid #606060;">
              
               <p class="uppercase_text">For Support Mail Us : </p>
@@ -54,13 +54,13 @@ echo "";
 
   <!-- Navigation -->
 
-  <nav id="navigation_bar" class="navbar navbar-default navbar-inverse" data-spy="affix" data-offset-top="197">
+  <nav id="navigation_bar" class="navbar navbar-default navbar-inverse" >
     <div class="container">
       <div class="navbar-header">
         <button id="menu_slide" data-target="#navigation" aria-expanded="false" data-toggle="collapse" class="navbar-toggle collapsed" type="button" style="background-color: transparent;border: 1px solid rgba(255, 255, 255, 0.2);border-radius: 33px;line-height: 17px;list-style: outside none none;margin: 0;padding: 8px 15px 7px;"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
       </div>
       <div class="header_wrap">
-        <div class="user_login">
+        <div class="user_login" >
           <ul>
             <li class="dropdown"> <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user-circle" aria-hidden="true"></i>
 <?php
@@ -75,7 +75,7 @@ if($query->rowCount() > 0)
 foreach($results as $result)
 	{
 
-	 echo htmlentities($result->FullName); }}?><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+	 echo htmlentities($result->FullName); }}?></a>
               <ul class="dropdown-menu"style="margin-top: 2px;margin-left: -133px;border: 1px solid rgba(255, 255, 255, 0.2);border-radius: 35px 0px 35px 0px;">
            <?php if($_SESSION['login']){?>
             <li><a href="profile.php">Profile Settings</a></li>
@@ -85,6 +85,7 @@ foreach($results as $result)
           <li><a href="my-testimonials.php">My Testimonial</a></li>
             <li><a href="logout.php">Sign Out</a></li>
             <?php } else { ?>
+              
             <li><a href="#loginform"  data-toggle="modal" data-dismiss="modal">Profile Settings</a></li>
               <li><a href="#loginform"  data-toggle="modal" data-dismiss="modal">Update Password</a></li>
             <li><a href="#loginform"  data-toggle="modal" data-dismiss="modal">My Reservation</a></li>
@@ -101,7 +102,7 @@ foreach($results as $result)
           
         </div>
       </div>
-      <div class="collapse navbar-collapse" id="navigation">
+      <div class="collapse navbar-collapse" id="navigation" >
         <ul class="nav navbar-nav" style="margin-left: 108px;">
           <li><a href="index.php">Home</a></li>
           <li><a href="car-listing.php">SHOWROOM</a>
