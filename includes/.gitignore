@@ -1,0 +1,31 @@
+# Fichiers sensibles
+.env
+.env.local
+.env.*.local
+
+# Dépendances
+/vendor/
+
+# Cache et logs
+/storage/*.key
+/storage/logs/
+bootstrap/cache/
+
+# Sessions et uploads
+/storage/framework/sessions/
+storage/framework/views/
+storage/framework/cache/
+
+# Configuration système
+*.lock
+*.log
+
+# IDE / éditeurs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db

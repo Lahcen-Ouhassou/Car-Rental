@@ -136,8 +136,7 @@ $msg="Testimonial Successfully Active";
             </thead>
             <tbody>
                 <?php 
-                $sql = "SELECT users.FullName,testimonial.UserEmail,testimonial.Testimonial,testimonial.PostingDate,testimonial.status,testimonial.id from testimonial join users on users.EmailU=testimonial.UserEmail";
-                $query = $dbh->prepare($sql);
+$sql = "SELECT users.FullName,                testimonial.UserEmail,                testimonial.Testimonial,                testimonial.PostingDate,                testimonial.status,                testimonial.id         FROM testimonial         LEFT JOIN users ON users.EmailU = testimonial.UserEmail";                 $query = $dbh->prepare($sql);
                 $query->execute();
                 $results = $query->fetchAll(PDO::FETCH_OBJ);
                 $cnt = 1;
