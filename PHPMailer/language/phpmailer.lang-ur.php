@@ -1,4 +1,4 @@
-<?php
+ <?php
 
 /**
  * Urdu PHPMailer language file: refer to English translation for definitive list
