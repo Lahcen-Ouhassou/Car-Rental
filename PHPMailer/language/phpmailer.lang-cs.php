@@ -4,7 +4,7 @@
  * Czech PHPMailer language file: refer to English translation for definitive list
  * @package PHPMailer
  */
-
+ 
 $PHPMAILER_LANG['authenticate']         = 'Chyba SMTP: Autentizace selhala.';
 $PHPMAILER_LANG['connect_host']         = 'Chyba SMTP: Nelze navázat spojení se SMTP serverem.';
 $PHPMAILER_LANG['data_not_accepted']    = 'Chyba SMTP: Data nebyla přijata.';
