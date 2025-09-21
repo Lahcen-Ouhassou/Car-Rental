@@ -1,3 +1,4 @@
+
 6.7.5 (2024-04-20)
 	- Update GitHub actions
 	- fix: CSV-2024-22640 (#712)
