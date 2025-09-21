@@ -1,4 +1,4 @@
-Changes from 2.33 to 2.34
+ Changes from 2.33 to 2.34
 * Sans, SansMono, Serif: unlinked references of U+2596 for bug 50848
   (by Denis Jacquerye)
 * Sans, SansMono, Serif: added U+A7AA (by Denis Jacquerye)
