@@ -1,4 +1,4 @@
-<?php
+ <?php
 
 /**
  * Norwegian Bokmål PHPMailer language file: refer to English translation for definitive list
