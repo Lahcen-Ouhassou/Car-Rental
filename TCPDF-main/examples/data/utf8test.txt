@@ -1,4 +1,4 @@
-Sentences that contain all letters commonly used in a language
+ Sentences that contain all letters commonly used in a language
 --------------------------------------------------------------
 
 This file is UTF-8 encoded.
