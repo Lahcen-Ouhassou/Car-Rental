@@ -1,3 +1,4 @@
+
 ./tcpdf_addfont.php -b -t Type1 -f 4 -e symbol -i pdfasymbol.pfb
 ./tcpdf_addfont.php -b -t Type1 -f 4 -i pdfazapfdingbats.pfb
 ./tcpdf_addfont.php -b -t Type1 -f 32 -e cp1252 -i pdfatimes.pfb,pdfatimesb.pfb,pdfahelvetica.pfb,pdfahelveticab.pfb
