@@ -7,7 +7,7 @@
  */
 
 $PHPMAILER_LANG['authenticate']         = 'SMTP грешка: Не може да се удостовери пред сървъра.';
-$PHPMAILER_LANG['connect_host']         = 'SMTP грешка: Не може да се свърже с SMTP хоста.';
+$PHPMAILER_LANG['connect_host']         = 'SMTP грешка: Не може да се свърже с SMTP хоста.'; 
 $PHPMAILER_LANG['data_not_accepted']    = 'SMTP грешка: данните не са приети.';
 $PHPMAILER_LANG['empty_message']        = 'Съдържанието на съобщението е празно';
 $PHPMAILER_LANG['encoding']             = 'Неизвестно кодиране: ';
