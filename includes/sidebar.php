@@ -1,4 +1,4 @@
-<style>
+ <style>
   .profile_nav ul li a:hover{
   text-shadow: none !important;
   color:#9c805c;
