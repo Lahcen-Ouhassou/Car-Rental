@@ -3,7 +3,7 @@
 // File name   : swe.php
 // Begin       : 2004-03-03
 // Last Update : 2010-10-26
-//
+// 
 // Description : Language module for TCPDF
 //               (contains translated texts)
 //               Swedish
