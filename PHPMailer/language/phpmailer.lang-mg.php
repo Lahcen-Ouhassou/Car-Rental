@@ -1,4 +1,4 @@
-<?php
+ <?php
 
 /**
  * Malagasy PHPMailer language file: refer to English translation for definitive list
