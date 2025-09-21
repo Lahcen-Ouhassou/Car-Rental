@@ -1,4 +1,4 @@
-This is the Unicode coverage file for DejaVu fonts
+ This is the Unicode coverage file for DejaVu fonts
 ($Id: unicover.txt 2538 2013-08-25 16:02:56Z moyogo $)
 
 Control and similar characters are discounted from totals.
