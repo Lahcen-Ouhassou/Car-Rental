@@ -6,7 +6,8 @@
  * @author Cecep Prawiro <cecep.prawiro@gmail.com>
  * @author @januridp
  * @author Ian Mustafa <mail@ianmustafa.com>
- */
+ */ 
+
 
 $PHPMAILER_LANG['authenticate']         = 'Kesalahan SMTP: Tidak dapat mengotentikasi.';
 $PHPMAILER_LANG['connect_host']         = 'Kesalahan SMTP: Tidak dapat terhubung ke host SMTP.';
