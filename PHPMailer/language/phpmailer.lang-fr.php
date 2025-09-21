@@ -7,7 +7,7 @@
  * for example before a colon or exclamation mark.
  * There is one of these characters between these quotes: " "
  */
-
+ 
 $PHPMAILER_LANG['authenticate']         = 'Erreur SMTP : échec de l’authentification.';
 $PHPMAILER_LANG['buggy_php']            = 'Votre version de PHP est affectée par un bug qui peut entraîner des messages corrompus. Pour résoudre ce problème, passez à l’envoi par SMTP, désactivez l’option mail.add_x_header dans le fichier php.ini, passez à MacOS ou Linux, ou passez PHP à la version 7.0.17+ ou 7.1.3+.';
 $PHPMAILER_LANG['connect_host']         = 'Erreur SMTP : impossible de se connecter au serveur SMTP.';
