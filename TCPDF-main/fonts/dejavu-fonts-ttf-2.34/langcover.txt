@@ -1,4 +1,4 @@
-This is the language coverage file for DejaVu fonts
+ This is the language coverage file for DejaVu fonts
 ($Id: langcover.txt 2538 2013-08-25 16:02:56Z moyogo $)
 
                                                 Sans               Serif              Sans Mono          
