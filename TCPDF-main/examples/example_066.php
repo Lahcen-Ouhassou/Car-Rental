@@ -1,4 +1,4 @@
-<?php
+ <?php
 
 /**
  * Example 066 for TCPDF library
