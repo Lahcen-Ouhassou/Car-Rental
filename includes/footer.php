@@ -1,6 +1,6 @@
 <script src="assets/js/sweetalert.js"></script>
 
-<?php 
+<?php  
 if(isset($_POST['emailsubscibe']))
 {
 $subscriberemail=$_POST['subscriberemail'];
