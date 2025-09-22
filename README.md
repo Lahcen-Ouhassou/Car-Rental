@@ -1,135 +1,102 @@
-🚗 Car Rental System
+# 🚗 Car Rental System
 
-This is a Car Rental Management System built with PHP & MySQL that allows customers to book cars online and admins to manage reservations, cars, brands, users, and more.
+![PHP](https://img.shields.io/badge/PHP-7.4-blue) 
+![MySQL](https://img.shields.io/badge/MySQL-5.7-orange) 
+![Bootstrap](https://img.shields.io/badge/Bootstrap-5-purple) 
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow) 
+![License](https://img.shields.io/badge/License-MIT-green)
 
-The project is divided into two main modules:
+---
 
-Client Module – where users can browse cars, make reservations, leave testimonials, and receive booking confirmations via email in PDF format.
+## 📖 About the Project
 
-Admin Module – where administrators can manage cars, brands, users, reservations, testimonials, pages, and more through a secured dashboard.
+**Car Rental System** is a complete web application built with **PHP & MySQL** that allows customers to browse and reserve cars online while administrators manage cars, brands, reservations, users, and more through a secured dashboard.  
 
-✨ Features
-🔹 Client Side
+The project is divided into two main modules:  
 
-User registration and login (with Gmail support).
+- **Client Module** – browse cars, make reservations, leave testimonials, receive PDF confirmation via email.  
+- **Admin Module** – manage cars, brands, reservations, testimonials, users, CMS pages, and more.  
 
-Password recovery via email.
+---
 
-Browse available cars and check availability.
+## ✨ Features
 
-Reserve cars online.
+### 🔹 Client Side
+- User registration & login (with Gmail support).  
+- Password recovery via email.  
+- Browse available cars and check availability.  
+- Reserve cars online.  
+- Submit testimonials.  
+- Receive booking confirmation in **PDF format** via Gmail after admin approval.  
 
-Submit testimonials.
+### 🔹 Admin Side
+- Secure admin authentication.  
+- Manage car brands (add, edit, delete).  
+- Manage cars (post, edit, delete).  
+- Manage reservations (approve/reject).  
+- Manage registered users & subscribers.  
+- Manage testimonials & contact queries.  
+- Manage CMS pages.  
+- Dashboard with quick statistics (cars, brands, users, reservations, etc.).  
 
-Receive booking confirmation in PDF format via Gmail after admin approval.
+---
 
-🔹 Admin Side
+## 🛠️ Technologies Used
 
-Secure login for admins.
+- **Frontend:** HTML5, CSS3, Bootstrap, JavaScript  
+- **Backend:** PHP  
+- **Database:** MySQL (phpMyAdmin)  
+- **UI Enhancements:** SweetAlert, AOS (Animate on Scroll)  
+- **Email Service:** PHPMailer  
+- **PDF Generation:** TCPDF  
 
-Manage car brands (add, edit, delete).
+---
 
-Manage cars (post a car, edit details, delete).
+## 📂 Project Structure
 
-Manage reservations (approve/reject).
-
-Manage registered users and subscribers.
-
-Manage testimonials and contact queries.
-
-Manage CMS pages.
-
-Dashboard with statistics (cars, brands, users, reservations, etc.).
-
-🛠️ Technologies Used
-
-Frontend: HTML5, CSS3, Bootstrap, JavaScript
-
-Backend: PHP
-
-Database: MySQL (phpMyAdmin)
-
-UI Enhancements: SweetAlert, AOS (Animate on Scroll)
-
-Email Service: PHPMailer
-
-PDF Generation: TCPDF
-
-📂 Project Structure
 Car-Rental/
-│── admin/              # Admin panel files
-│── assets/             # CSS, JS, and images
-│── database/           # Database connection and SQL schema
-│── includes/           # Reusable PHP scripts
-│── PHPMailer/          # Email service
-│── TCPDF-main/         # PDF generation library
-│── uploads/            # Uploaded files (car images, etc.)
-│── car-listing.php     # Car listing page
-│── cars-details.php    # Car details page
+│── admin/ # Admin panel files
+│── assets/ # CSS, JS, and images
+│── database/ # Database connection and SQL schema
+│── includes/ # Reusable PHP scripts
+│── PHPMailer/ # Email service
+│── TCPDF-main/ # PDF generation library
+│── uploads/ # Uploaded files (car images, etc.)
+│── car-listing.php # Car listing page
+│── cars-details.php # Car details page
 │── check_availability.php
 │── contact-us.php
 │── generate_pdf.php
-│── index.php           # Homepage
+│── index.php # Homepage
 │── login.php / logout.php
 │── my-reservation.php
 │── my-testimonials.php
 │── page.php
 
-⚙️ Requirements
-
-PHP >= 7.4
-
-MySQL >= 5.7
-
-Apache/Nginx server (e.g., XAMPP, WAMP, or LAMP)
-
-PHPMailer (included in project)
-
-TCPDF (included in project)
-
-🚀 Getting Started
-
-Clone the repository
-
-git clone https://github.com/Lahcen-Ouhassou/Car-Rental.git
 
 
-Setup the database
+---
 
-Import the SQL file from /database/ into your MySQL server.
+## ⚙️ Setup the Database
 
-Update the database credentials in includes/config.php.
+1. Import the SQL file from `/database/` into your MySQL server.  
+2. Update the database credentials in `includes/config.php`.  
 
-Run the project
+---
 
-Place the project folder inside your web server (htdocs for XAMPP).
+## 🚀 Run the Project
 
-Start Apache & MySQL.
+1. Place the project folder inside your web server (`htdocs` for XAMPP).  
+2. Start **Apache & MySQL**.  
+3. Open in browser:  http://localhost/Car-Rental
 
-Open in browser:
 
-http://localhost/Car-Rental
 
-🔑 Demo Credentials
-Admin Login
+---
 
-Email: admin@gmail.com
+## 👨‍💻 Author
 
-Password: admin123
+Developed by **[Lahcen Ouhassou](https://github.com/Lahcen-Ouhassou)**  
 
-Client Login
+---
 
-Email: client@gmail.com
-
-Password: client123
-
-📸 Screenshots
-🔹 Admin Dashboard
-
-🔹 Car Listing
-
-🔹 Reservation Confirmation
-
-👨‍💻 Author
-
-Developed by Lahcen Ouhassou
