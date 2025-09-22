@@ -42,7 +42,6 @@ The project is divided into two main modules:
 ---
 
 ## 🛠️ Technologies Used
-
 - **Frontend:** HTML5, CSS3, Bootstrap, JavaScript  
 - **Backend:** PHP  
 - **Database:** MySQL (phpMyAdmin)  
