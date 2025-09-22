@@ -73,7 +73,12 @@ Car-Rental/
 │── page.php
 
 
+## Getting Started
 
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Lahcen-Ouhassou/Car-Rental.git
+   
 ---
 
 ## ⚙️ Setup the Database
