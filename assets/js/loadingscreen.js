@@ -1,4 +1,4 @@
-// Script loading page
+ // Script loading page
 
 window.onload = function () {
   // Hide the loading screen
